@@ -50,7 +50,7 @@ body{
   .canvas{
     margin-left: 2.5rem;
     width: 1024px;
-    height:800px
+    height:800px;
   }
 
   .homeBtns{
@@ -59,4 +59,8 @@ body{
     align-items: flex-start;
     position: absolute;
     left:42rem;
+   }
+
+   #hang{
+    /* background-color: lightblue; */
    }

@@ -13,7 +13,7 @@ function drawCanvas(){
     board.closePath();
 }
 
-function drawLine(){
+function drawLetterLine(){
     board.lineWidth = 6;
     board.lineCap = "round";
     board.lineJoin = "round";
@@ -27,4 +27,33 @@ function drawLine(){
     }
     board.stroke();
     board.closePath();
+}
+// intento de avanzar solo
+/*
+function replaceLetter(){
+    for (let i = 0; i < secretWord.length; i++){
+        board.replaceAt(i*2, keyPressed);
+    }
+}*/
+
+// 2 livecoding
+function escribirLetraCorrecta(index){
+    board.font = 'bold 52px Inter';
+    board.lineWidth = 6;
+    board.lineCap = "round";
+    board.lineJoin = "round";
+    board.fillStyle = "#8A3871";
+    
+    let wide = 600/secretWord.length;
+    board.fillText(secretWord[index],505+(wide*index), 620)
+    board.stroke()
+}
+
+function escribirLetraIncorrecta(letter, errorsLeft){
+    board.font = 'bold 40px Inter';
+    board.lineWidth = 6;
+    board.lineCap = "round";
+    board.lineJoin = "round";
+    board.fillStyle = "#8A3871";
+    board.fillText(letter, 535+(40*(10-errorsLeft)), 710, 40)
 }
