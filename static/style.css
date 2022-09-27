@@ -37,6 +37,35 @@ body{
     color: #FFFFFF;
   }
 
+  .addNewWordBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    
+    position: absolute;
+    width: 317px;
+    height: 90px;
+    left: 0;
+    top: 30rem;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #FFFFFF;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  
+  /* White */
+  
+    color: #0A3871;
+  }
+
   .logoa{
     position: absolute;
     left: 50px;
@@ -61,6 +90,3 @@ body{
     left:42rem;
    }
 
-   #hang{
-    /* background-color: lightblue; */
-   }

@@ -35,6 +35,7 @@ function anadirLetraIncorrecta(){
 // iniciar juego
 function startGame(){
     document.getElementById("startGame").style.display = "none";
+    document.getElementById("addNewWord").style.display = "none";
 
     chooseSecretWord();
     drawCanvas();

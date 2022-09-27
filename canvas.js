@@ -7,7 +7,7 @@ function drawCanvas(){
 
     board.fillRect(0,0,1200,860);
     board.beginPath();
-    board.moveTo(650, 500);
+    board.moveTo(500, 500);
     board.lineTo(900,500);
     board.stroke();
     board.closePath();
@@ -22,7 +22,7 @@ function drawLetterLine(){
 
     let wide = 600/secretWord.length;
     for (let i = 0; i < secretWord.length; i++){
-        board.moveTo(500 + (wide*i), 640)
+        board.moveTo(450 + (wide*i), 640)
         board.lineTo(550 + (wide*i), 640)
     }
     board.stroke();
