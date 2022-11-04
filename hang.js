@@ -6,6 +6,17 @@ let letters = [];
 let errors = 8;
 
 
+
+
+// agregar palabra
+function addNewWord() {
+    let newWord = document.getElementById("newWordInput").value;
+    // console.log(newWord);
+    let addedWord = newWord.toUpperCase();
+    words.push(addedWord);
+    console.log(words);
+}
+
 // Palabra Secreta
 function chooseSecretWord(){
     let word = words[Math.floor(Math.random() * words.length)];

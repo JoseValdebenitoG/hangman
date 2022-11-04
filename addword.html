@@ -5,30 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahorcado</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/reset.css">
     <link rel="shortcut icon" href="static/logojv.ico" mce_href="static/logojv.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/style.css">
+    <title>Agregar Plabra</title>
 </head>
 
 <body>
     <header>
         <img src="static/logoAlura.png" class="logoa" alt="logo alura">
     </header>
-
-    <div id="hideDiv" class="homeBtns">
-        <a href="#hang">
-            <input class="startBtn" type="submit" value="Iniciar Juego" id="startGame" onclick="startGame()">
-        </a>
-        <a href="addword.html">
-            <input class="addNewWordBtn" type="submit" value="Agregar nueva palabra">
-        </a>
-    </div>
-    <div id="showDiv" class="canvas">
-        <!-- Canvas -->
-        <canvas id="hang" width="1200" height="860"></canvas>
-        <div class="underline"></div>
+    <div class="newWordDiv">
+        <input type="text" class="addNewWordIntput" id="newWordInput">
+        <button class="addWordBtn" value="Agregar Palabra" onclick="addNewWord()">Agregar Palabra</button>
     </div>
     <script src="hang.js"></script>
     <script src="canvas.js"></script>

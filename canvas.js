@@ -57,3 +57,19 @@ function escribirLetraIncorrecta(letter, errorsLeft){
     board.fillStyle = "#8A3871";
     board.fillText(letter, 535+(40*(10-errorsLeft)), 710, 40)
 }
+
+
+// function dibujarHorca () {
+//     board.lineWidth = 8;
+//     board.lineCap = "round";
+//     board.lineJoin = "round";
+//     board.fillStyle = "#F3F5F6";
+//     board.strokeStyle = "#8A3871";
+
+//     board.fillRect(0,0,1200,860);
+//     board.beginPath();
+//     board.moveTo(700, 500);
+//     board.lineTo(1200,500);
+//     board.stroke();
+//     board.closePath();
+// }
